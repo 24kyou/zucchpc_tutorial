@@ -9,14 +9,19 @@
 ### 必要环境
 > 以下环境对具体版本要求不大
 1. **sudo**  
+
 在ubuntu/centos的镜像中正常下载一些环境所必需的。
 
 2. **ssh**
+
 使用 sudo yum/apt/apt-get install openssh-server 进行下载,且端口仅能为22,即默认端口。只有配置了ssh服务，才能作为base进行镜像提交且能正常使用。
 
 3. **conda/miniconda**
+
 在容器中推荐使用 conda install 而不是pip install。
+
 4. **jupyterlab jupyterhub notebook**
+
 想要在web端中使用notebook功能，则要求容器内已经存在jupyterlab包环境（其他环境可选）且安装目录在/opt/conda/下面（即conda install的默认环境）。在上传时勾选 **jupyter**。
 
 ### 关于docker/nvidia-docker 版本要求
