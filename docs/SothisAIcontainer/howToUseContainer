@@ -1,0 +1,11 @@
+# 推荐使用容器而不是notebook
+
+关于容器和notebook的使用方式请见：[平台使用教程](../SothisAI/UsePlatform.md)
+
+容器和notebook本质上是一样，底层都是用docker实现，但容器中可供使用的类别更多，包括 jupyter notebook , ssh , VScode, Rstudio。
+
+
+
+
+
+
