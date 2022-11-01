@@ -3,3 +3,5 @@
   * [如何在平台上训练模型](./SothisAI/TrainModel.md)
   * [关于容器上的镜像](./SothisAIcontainer/docker.md)
   * [关于如何链接容器](./SothisAIcontainer/ssh.md)
+  * [容器和镜像如何选择](./SothisAI/../SothisAIcontainer/howToUseContainer.md)
+* [linux新手必看](./linux/HowToUseLinux.md)
