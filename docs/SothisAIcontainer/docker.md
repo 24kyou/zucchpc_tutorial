@@ -24,6 +24,8 @@
 
 想要在web端中使用notebook功能，则要求容器内已经存在jupyterlab包环境（其他环境可选）且安装目录在/opt/conda/下面（即conda install的默认环境）。在上传时勾选 **jupyter**。
 
+> <font style ="color:red">此方法可有可无，废弃原因详情见[使用ssh而不是notebook作为镜像源](howToUseContainer.md)</font >
+
 ### 关于docker/nvidia-docker 版本要求
 存在一些镜像需要要求使用特定版本的docker/nvidia-docker来进行启动（说的就是nvidia官方的docker），目前服务器上的docker版本为**18.09** 。
 
