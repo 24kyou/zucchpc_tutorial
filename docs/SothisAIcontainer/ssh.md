@@ -1,5 +1,8 @@
 # 如何外部直接链接到容器内部
+推荐使用**vscode**，jetbrains系列工具 pycharm，idea，webstorm等要求在2022.1以上，此版本后的ssh/远程连接比之前版本要好用。
 ## 第一种方法：使用ssh二次跳转
+> 此方法只适用于能直接编辑.ssh/config文件的软件，jetbrains系列软件在2022.1版本及以前是不支持的。
+
 通过配置ssh下的config文件，使得ssh的proxyjump命令进行跳转。
 因此推荐能使用ssh/config 来直接链接的编程工具，如vscode，vim，nvim，emacs等。
 示例代码：
@@ -32,3 +35,15 @@ Host SothisAI_container #目标机名称，自定义
 3. 根据分配的ip:port，在各个远程访问软件/编辑器/IDE中配置一下即可以使用。
 > 注意，因为端口池只是小规模开放，存在因为端口池资源被用完而导致**无资源可用**，此时只能等待其他用户使用完并释放资源。
 ![容器获取ip5](./ssh_images/container_socket_3.png)
+
+```shell
+  #.ssh/config的摸板案例，除了HostName外其他都根据用户需要调整
+Host {自定义名称} 
+  HostName 10.160.195.50 #固定ip
+  Port {IP端口}
+  User {用户名}
+
+```
+
+4. 登录名与登陆密码
+> **跳转机和容器**的登录密码都是使用者的**登录平台的密码**，用户名也是相同。
