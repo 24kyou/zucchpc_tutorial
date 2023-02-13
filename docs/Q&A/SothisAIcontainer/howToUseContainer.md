@@ -8,6 +8,6 @@
 2. notebook服务界面提供的**操作**选项并不全面，更多操作需要到**容器服务->人物列表**
 
 ## 如何使用notebook和容器实例服务
-1. 关于notebook的使用方式详见：[1notebook服务](../../tutorial/SothisAI/UsePlatform.md#1notebook服务)
+1. 关于notebook的使用方式详见：[1notebook服务](./tutorial/SothisAI/UsePlatform#_1notebook服务)
 
-2. 关于容器实例的使用方法详见：[6.1容器实例](../../tutorial/SothisAI/UsePlatform.md#61容器实例)
+2. 关于容器实例的使用方法详见：[6.1容器实例](./tutorial/SothisAI/UsePlatform#_61容器实例)
